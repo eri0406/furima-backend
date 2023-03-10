@@ -11,6 +11,5 @@ itemsテーブル
 | area_id        | integer | null: false            |
 | shipping_id    | integer | null: false            |
 | price          | integer | null: false            |
-| image          | string  | null; false
 
 Association:なし
