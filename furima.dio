@@ -7,7 +7,7 @@
                 <mxCell id="11" value="itemsテーブル" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
                     <mxGeometry x="90" y="170" width="230" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="name string            :null, false&#10;content  text           :null, false&#10;category_id integer: null, false&#10;state_id integer.     : null, false&#10;load_id integer.      : null, false&#10;area_id integer.      : null, false&#10;shipping_id integer.      : null, false&#10;price integer            : null, false&#10;image  string           : null, false&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="11">
+                <mxCell id="12" value="name string            :null, false&#10;content  text           :null, false&#10;category_id integer: null, false&#10;state_id integer.     : null, false&#10;load_id integer.      : null, false&#10;area_id integer.      : null, false&#10;shipping_id integer.      : null, false&#10;price integer            : null, false&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="11">
                     <mxGeometry y="30" width="230" height="180" as="geometry"/>
                 </mxCell>
             </root>
