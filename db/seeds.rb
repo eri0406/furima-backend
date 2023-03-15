@@ -8,13 +8,13 @@
 # coding: utf-8
 
 Item.create!(
-    image: ActiveStorage::Blob.create_and_upload!(io: File.open(Rails.root.join("public/images/book.jpg")), filename: "book.jpg"),
+    image: ActiveStorage::Blob.create_and_upload!(io: File.open('public/images/book.jpg'), filename:'book.jpg'),
     name: '本',
     content: 'これは本です',
-    category_id: '2',
-    state_id: '2',
-    load_id: '2',
-    area_id: '2',
-    shipping_id: '2',
+    category_id: 2,
+    state_id: 2,
+    load_id: 2,
+    area_id: 2,
+    shipping_id: 2,
     price: 1000
 )
