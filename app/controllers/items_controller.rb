@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def index
-    items = item.all
+    items = Item.all
     render json: items
   end
 end
