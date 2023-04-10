@@ -1,5 +1,5 @@
 class Item < ApplicationRecord
-    include Rails.application.routes.url_helpers
+　　　　　　　　include Rails.application.routes.url_helpers
     extend ActiveHash::Associations::ActiveRecordExtensions
     belongs_to_active_hash :category
     belongs_to_active_hash :state
@@ -7,12 +7,11 @@ class Item < ApplicationRecord
     belongs_to_active_hash :shipping
 
     has_one_attached :image
-    # mount_uploader :image, ImageUploader
+
     def image_url   
         image.attached? ? url_for(image) : nil
     end 
 
-   
     with_options presence: true do
         validates :image
         validates :name
@@ -20,6 +19,6 @@ class Item < ApplicationRecord
         validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999, message: 'is invalid'}
     end
 
-    validates :category_id, :state_id, :load_id, :area_id, :shipping_id, numericality: { other_than: 1 , message: "can't  be blank" }  
-
+    validates :category_id, :state_id, :load_id, :area_id, :shipping_id, numericality: { other_than: 1 , message: "can't  be blank" } 
 end
+

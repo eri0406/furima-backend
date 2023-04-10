@@ -55,6 +55,4 @@ gem 'image_processing' , '~>1.2'
 
 gem 'active_hash'
 
-gem 'carrierwave'
-
 gem 'active_model_serializers', '~> 0.10.2'
