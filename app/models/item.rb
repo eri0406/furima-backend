@@ -1,4 +1,5 @@
 class Item < ApplicationRecord
+    include Rails.application.routes.url_helpers
     extend ActiveHash::Associations::ActiveRecordExtensions
     belongs_to_active_hash :category
     belongs_to_active_hash :state
@@ -6,7 +7,12 @@ class Item < ApplicationRecord
     belongs_to_active_hash :shipping
 
     has_one_attached :image
+    # mount_uploader :image, ImageUploader
+    def image_url   
+        image.attached? ? url_for(image) : nil
+    end 
 
+   
     with_options presence: true do
         validates :image
         validates :name
@@ -15,4 +21,5 @@ class Item < ApplicationRecord
     end
 
     validates :category_id, :state_id, :load_id, :area_id, :shipping_id, numericality: { other_than: 1 , message: "can't  be blank" }  
+
 end

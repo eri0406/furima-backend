@@ -1,0 +1,8 @@
+class ItemSerializer < ActiveModel::Serializer 
+ 
+  attributes :id,:image_url, :name, :price, :load_id
+
+  def load_id
+    object.load.name
+  end
+end
